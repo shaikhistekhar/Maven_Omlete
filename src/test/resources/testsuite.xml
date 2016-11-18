@@ -1,0 +1,60 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ebay Suite" verbose="2" parallel="tests" thread-count="1" data-provider-thread-count="1">
+
+	<listeners>
+		<listener class-name="omelet.testng.support.TestInterceptor"></listener>
+		<listener class-name="omelet.driver.DriverInitialization"></listener>
+		<listener class-name="omelet.testng.support.RetryIAnnotationTransformer"></listener>
+		<listener class-name="omelet.driver.SuiteConfiguration"></listener>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+	</listeners>
+
+ 	<test name="LoginTest">
+		<classes>
+			<class name="com.ebay.test.LoginTest" />
+		</classes>
+	</test>
+
+	<test name="CartTest">
+		<classes>
+			<class name="com.ebay.test.CartPageTest" />
+		</classes>
+	</test>
+
+	<test name="AdvanceSearchTest">
+		<classes>
+			<class name="com.ebay.test.AdvanceSearchTest" />
+		</classes>
+	</test>
+	
+ 	<test name="MouseHoverTest">
+		<classes>
+			<class name="com.ebay.test.MouseHoverTest" />
+		</classes>
+	</test>
+	
+	<test name="PlaceBidTest">
+		<classes>
+			<class name="com.ebay.test.PlaceBidTest" />
+		</classes>
+	</test>
+	
+	<test name="ProductFeedbackTest">
+		<classes>
+			<class name="com.ebay.test.ProductFeedbackTest" />
+		</classes>
+	</test>
+	
+	<test name="SearchProductTest">
+		<classes>
+			<class name="com.ebay.test.SearchProductTest" />
+		</classes>
+	</test>
+	
+<!-- 	<test name="SelectBookFromDropdownTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.ebay.test.SelectBookFromDropdownTest" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+</suite>

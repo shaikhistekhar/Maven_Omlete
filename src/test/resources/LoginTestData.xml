@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Conf [
+<!ELEMENT Conf (Data+)>
+<!ATTLIST Data environment CDATA #REQUIRED>
+<!ELEMENT Data (Pages)>
+<!ELEMENT Pages (Page+)>
+<!ATTLIST Page name CDATA #REQUIRED>
+]>
+
+<Conf>
+<!-- 	<Data environment="qa"> -->
+<!-- 		<Pages> -->
+<!-- 			<Page name="HomePage"> -->
+<!-- 				<url>http://ebay.in</url> -->
+<!-- 				<productname>Pen</productname> -->
+<!-- 				<category>Books &amp; Magazines</category> -->
+<!-- 			</Page> -->
+			
+<!-- 			<Page name="LoginPage"> -->
+<!-- 				<userid>shaikh@ebay.in</userid> -->
+<!-- 				<pwd>sh123</pwd> -->
+<!-- 				<errormsg>Oops, that's not a match.</errormsg> -->
+<!-- 			</Page> -->
+			
+<!-- 			<Page name="AdvanceSearchPage"> -->
+<!-- 				<numberofresults>200</numberofresults> -->
+<!-- 				<searchkeyword>television</searchkeyword> -->
+<!-- 			</Page> -->
+			
+<!-- 			<Page name="ProductFeedbackPage"> -->
+<!-- 				<commenttext>Useful product</commenttext> -->
+<!-- 			</Page> -->
+<!-- 		</Pages> -->
+<!-- 	</Data> -->
+	
+	<Data environment="uat">
+		<Pages>
+			<Page name="HomePage">
+				<url>http://ebay.in</url>
+				<productname>Pencil</productname>
+				<category>Books &amp; Magazines</category>
+			</Page>
+			
+			<Page name="LoginPage">
+				<userid>nagesh@ebay.in</userid>
+				<pwd>sh1</pwd>
+				<errormsg>Oops, that's not a match.</errormsg>
+			</Page>
+			
+			<Page name="AdvanceSearchPage">
+				<numberofresults>100</numberofresults>
+				<searchkeyword>television</searchkeyword>
+			</Page>
+			
+			<Page name="ProductFeedbackPage">
+				<commenttext>Useful producst</commenttext>
+			</Page>
+		</Pages>
+	</Data>
+
+</Conf>
